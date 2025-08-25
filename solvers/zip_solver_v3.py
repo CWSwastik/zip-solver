@@ -1,6 +1,6 @@
 # v2 + connectivity pruning
 
-from grids import grid, walls
+from solvers.grids import grid, walls
 
 N = len(grid)
 start = 1
@@ -9,7 +9,7 @@ TEMP_DRAW_RATE = 0.00
 
 end = max([max(row) for row in grid])
 
-from utils import draw_path, draw_path_walls
+from solvers.utils import draw_path, draw_path_walls
 from random import random
 
 positions = {grid[r][c]: (r, c) for r in range(N) for c in range(N) if grid[r][c] != 0}
